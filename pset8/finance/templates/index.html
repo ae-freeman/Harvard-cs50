@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+
+<h1>Index</h1>
+
+<p>Current cash = ${{cash}}</p>
+<p>Grand total (cash + stock value) = ${{grand_total}}</p>
+
+<table class="table">
+    <thead>
+        <th scope="col">Stocks</th>
+        <th scope="col">Number owned</th>
+        <th scope="col">Current price</th>
+        <th scope="col">Total value</th>
+    </thead>
+    <tbody>
+
+    {% for stock in stocks %}
+        <tr>
+          <td>{{ stock["symbol"] }}</td>
+          <td>{{ stock["amount"] }}</td>
+          <td>{{ stock["current_price"] | usd}}</td>
+          <td>{{ stock["total_value"] | usd}}</td>
+        </tr>
+
+    {% endfor %}
+
+    </tbody>
+
+
+
+
+</table>
+
+
+  <tbody>
+    {% for player in players %}
+        <tr>
+            <td>{{ player[0] }}</td>
+            <td>{{ player[1] }}</td>
+            <td>{{ player[2] }}</td>
+        </tr>
+
+    {% endfor %}
+  </tbody>
+
+
+
+
+{% endblock %}

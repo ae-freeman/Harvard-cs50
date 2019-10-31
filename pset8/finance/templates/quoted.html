@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Get a quote
+{% endblock %}
+
+{% block main %}
+
+<div class="card" >
+  <div class="card-body" >
+    <h5 class="card-title">Stock quote</h5>
+
+<!--The name of the returned json data is stockSymbol. To access the different components, use the . notation.-->
+    <p>{{ stockSymbol.name }}</p>
+    <p>{{ stockSymbol.symbol }}</p>
+    <p>costs {{ stockSymbol.price | usd}}</p>
+
+
+  </div>
+</div>
+
+
+{% endblock %}
+
+<!--style="width: 25rem;"-->
+
