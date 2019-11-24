@@ -3,15 +3,7 @@ https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/
 
 ### Problem Set 1
 
-Mario (less): In C, recreate this pyramid:
-       #
-      ##
-     ###
-    ####
-   #####
-  ######
- #######
-########
+Mario (less): In C, recreate a right-aligned half-pyramid of hashes. 
 
 Cash: In C, implement a greedy algorithm that finds the minimum number of coins needed to satisfy a given amount. 
 
