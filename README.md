@@ -25,7 +25,7 @@ Recover: Implement in C a program that recovers JPEGs from a forensic image.
 
 ### Problem Set 4
 
-Speller: In C, using a file of words (the dictionary) load all the words into a hash table using linked lists. Iterate over words in a text file and check if they are mispelt or not according to the words from the dictionary. Count the total number of words in the dictionary. Unload memory at the end. 
+Speller: In C, using a file of words (the dictionary), load all the words into a hash table using linked lists. Iterate over words in a text file and check if they are mispelt or not according to the words from the dictionary. Count the total number of words in the dictionary. Unload memory at the end. 
 
 ### Problem Set 5
 
